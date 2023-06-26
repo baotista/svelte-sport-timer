@@ -22,7 +22,7 @@
     const { value } = e.target;
 
     if (parseInt(value)) {
-      dispatch({ type: "seTime", payload: parseInt(value) });
+      dispatch({ type: "setTime", payload: parseInt(value) });
     }
   };
 </script>

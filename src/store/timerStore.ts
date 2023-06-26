@@ -7,7 +7,7 @@ export type ExerciseAction = {
 
 type ExerciseActionWithPayloadType =
   | "setSeries"
-  | "seTime"
+  | "setTime"
   | "setCurrentSeries"
   | "set_time_elapsed"
   | "set_interval_id";
@@ -43,7 +43,7 @@ const exerciseReducer: (
         ...state,
         series: action.payload,
       };
-    case "seTime":
+    case "setTime":
       return {
         ...state,
         time: action.payload,
