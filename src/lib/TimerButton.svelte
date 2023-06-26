@@ -37,8 +37,7 @@
             payload: Math.round(elapsedTime * 100) / 100,
           });
         } else {
-          dispatch({ type: "set_interval_id", payload: undefined });
-          return;
+          dispatch({ type: "pause_timer" });
         }
       }),
     });
